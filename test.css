@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  padding: 0 12px;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image:url(background.svg) ;
+}
+.container{
+  width: 500px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(1, 1, 1, 0.2);
+}
+img{
+  width: 300px;
+  height: 200px;
+  
+}
+.container h1{
+  font-size: 25px;
+  font-weight: 500;
+  padding: 20px 25px;
+  border-bottom: 1px solid rgb(222, 221, 221);
+}
+.container .backgr{
+  margin: 26px 26px 36px;
+}
+.backgr .inputs{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.inputs input{
+  height: 60px;
+  width: 50px;
+  margin: 5px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #1dbd9d;
+  text-align: center;
+  border-radius: 4px;
+  background: none;
+  pointer-events: none;
+  text-transform: uppercase;
+  border: 1px solid #b3b1b1;
+}
+.typing {
+  opacity: 0;
+  z-index: -999;
+  position: absolute;
+  pointer-events: none;
+}
+.inputs input:first-child{
+  margin-left: 0px;
+}
+.backgr .details{
+  margin: 21px 0 24px;
+}
+.details p{
+  font-size: 19px;
+  margin-bottom: 12px;
+}
+.backgr .reset{
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  padding: 16px 0;
+  font-size: 18px;
+  border-radius: 4px;
+  background: #14d2ac;
+  transition: all 0.2s ease;
+}
+.backgr .reset:hover{
+  background: #1bbd9d;
+}
+
